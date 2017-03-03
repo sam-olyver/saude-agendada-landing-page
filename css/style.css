@@ -1,0 +1,65 @@
+@charset "utf-8";	
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, hr, p, pre,
+a, address, img, small,  strong, sub, sup, u, i, 
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,table, caption, tbody,
+ tfoot, thead, tr, th, td, figure, picture, embed {
+	margin: 0;
+	padding: 0;
+	font-family: 'Century Gothic', sans-serif;
+	background: transparent;
+	vertical-align: baseline;
+	border: 0;
+	outline: none;
+
+}
+img, picture, video, embed, figure {
+	max-width: 100%;
+}
+h1{
+	font-size: 2em;
+	color: #fff;
+	text-align: justify;
+	font-family: 'Century Gothic', sans-serif;	
+}
+h2{
+	color: #fff;	
+	font-family: 'Century Gothic', sans-serif;
+}
+h3{
+	color: #fff;	
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 20px;
+}
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+
+section{
+	width: 100%;
+	height: 100%;/*665px*/
+}
+header+section{
+	padding-top: 80px; 
+ }
+#home{
+	background: #ebebeb;	
+}
+.seta{
+	z-index: 9999;
+	position: absolute;
+	bottom: 0; /* 100px/665px = 0,1503759398496241*/	
+}
+section{
+	clear: both;
+	height: auto;	
+}
+/*---------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,145 @@
+header{
+	max-width: 100%;
+	height: 80px;
+	background: #ebebeb;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999999;
+  text-align: center;
+}
+nav{
+	width: 100%;
+	display: block;	
+	margin-top: 20px;
+	
+	}
+nav li{
+	display: inline;	
+	}
+nav li a{
+	color: #000;
+	font-size: 1.1875em;/* 19px/16px=1.1875 */		
+	padding: 1.66666666666667%; /*20px/ 1200px=0.0166666666666667 */ 
+	text-decoration: none;	
+}
+nav a:hover{
+	-webkit-transition-duration: .60s;	
+	border-bottom: solid 2px #09F;
+	padding-bottom: 5px;
+	}
+@media screen and (max-width: 665px){/*quebra de linha do menu*/
+  nav li a{
+  	font-size: 0.6875em;/*11px/16px= 0.6875*/	
+  }
+}	
+/*---------------------------------------checkbox menu nav------------------------------------------------------*/
+header input[type="checkbox"] {
+  display: none;
+  position: absolute;
+  left: -9999px;
+  opacity: 0; 
+}
+@media screen and (min-width: 461px){
+.fivegeeks{
+	display: none;
+}
+}
+@media screen and (max-width: 460px) {
+header{
+	background-image: url(midia/img/lotus2.png);
+	background-repeat: no-repeat;
+	background-position: center;		
+	}
+	
+  header .control-nav { /* label icon */
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #333;
+    border-width: 3px 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+header .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fff;
+	color: #fff;
+  }
+nav li{
+	display: block;
+	line-height: 35px;
+	padding-top: 10px;
+}
+nav li a{
+	font-size: 1em; /*16px/16px = 1 */
+}
+nav a:hover{
+	padding-bottom: 2px;
+	background-color: rgba(242,255,255,3);
+	color: #000;
+	padding: 15px 100px 15px 100px;
+	}
+header .control-nav-close {
+    position: fixed; /* label layer */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.4);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+	
+  }
+header nav {
+    position: fixed;
+    top: -30px;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    border-left: 2px solid #09f;
+    background: #fff;
+    overflow-x: auto;
+    z-index: 2;
+	display: block;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+  
+  /* checked nav */
+#control-nav {
+    display: block;
+  }
+#control-nav:focus ~ .control-nav {
+    border-color: #000;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+  }
+#control-nav:focus ~ .control-nav:before {
+    background: #000;
+  }
+#control-nav:checked ~ .control-nav-close {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+#control-nav:checked ~ nav {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+/*------------------------------------------------fim header---------------------------------------------------------------*/
