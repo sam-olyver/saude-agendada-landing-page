@@ -26,6 +26,8 @@ h1{
 h2{
 	color: #fff;	
 	font-family: 'Century Gothic', sans-serif;
+	margin-top: 90px;
+	font-size: 2em;
 }
 h3{
 	color: #fff;	
@@ -63,3 +65,107 @@ section{
 	height: auto;	
 }
 /*---------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------sessao serviços-----------------------------------------------------------*/
+#serv{
+	background-color: #eb8921;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+}
+.bloco1, .bloco2{display: block; min-width: 100%;}
+.bloco1, .bloco2, ul li {display: inline-block; list-style: none;} 
+
+
+@media screen and (min-width: 1024px){
+	#serv{height: 700px;}
+}
+
+#cadastro, #agendar, #consulta, #paciente, #duvidas, #fale, #tabela, #tipos{
+	width: 200px;
+	height: 210px;	
+	display: block;
+	margin-left: 40px;
+	margin-top: 30px;
+	float: left;
+
+}
+#duvidas, #fale, #tabela, #tipos{
+	padding-top: 20px;	
+}
+
+
+.janelamodal{
+	position: fixed;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 17px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.2);
+	z-index: 999999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+			
+.janelamodal:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+			
+.janelamodal  div{
+	width: 95%;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 20px 15px 20px;
+	background-color: #FF9900;
+	background-color:-moz-linear-gradient(#000.red);
+	background-color:-webkit-linear-gradient(#000.red);
+	background-color:-o-linear-gradient(#000.red);
+}
+
+.texto{
+	width: 50%;
+	text-align: justify;
+	font-family: 'Century Gothic', sans-serif;
+	margin: 0 auto;
+	margin-top: 150px;
+	color: #fff;
+	font-size: 24px;	
+}
+
+@media screen and (max-width: 480px){
+	.texto{
+		width: 70%;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+}
+.fechar{
+	background-color: none;
+	font-size: 30px;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	right: 60px;
+	text-align: center;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+	
+}
+.fechar:hover{
+	background-color: #fff;
+	color:#FF9900;
+	-webkit-transition-duration: .60s;
+	border-radius: 50%;
+}
+	

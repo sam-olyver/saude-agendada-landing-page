@@ -286,8 +286,8 @@ h3 {
     margin-left: -20%;
   }
   #sequence .title {
-    background-color: #a1a1a1;
-    /*background-color: rgba(0, 0, 0, 0.3);*/
+    /*background-color: #a1a1a1;*/
+    background-color: rgba(0, 0, 0, 0.3);
     bottom: 0;
     left: 100%;
     padding: 4%;
@@ -311,22 +311,30 @@ h3 {
     height: 100px;
   }
   #sequence .subtitle{
-	margin-top: -50px;  
+	 margin-top: -50px;  
   }
 }
 @media screen and (max-width: 518px) {
   #sequence {
-    height: 450px;
+    height: 400px;
+  }
+  #sequence .subtitle{
+   margin-top: -120px;  
   }
 }
 @media screen and (max-width: 468px) {
   #sequence {
-    height: 415px;
+    height: 375px;
   }
   #sequence .sequence-pagination {
     opacity: 0;
     visibility: hidden;
   }
+  #sequence .subtitle{
+   margin-top: -90px;
+   font-size: 1.2em;  
+  }
+  #sequence .title{font-size: 1.3em;}
 }
 @media screen and (max-width: 418px) {
   #sequence {
@@ -349,7 +357,7 @@ h3 {
   }
   #sequence .subtitle{
 	font-size: 0.875em;	
-	margin-top: -40px;  
+	margin-top: -60px;  
   }
 }
 @media screen and (max-width: 320px) {
