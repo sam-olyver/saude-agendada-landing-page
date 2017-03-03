@@ -1,0 +1,104 @@
+@charset "utf-8";	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, figure, picture, embed {
+	margin: 0;
+	padding: 0;
+	font-family: 62.5%;	
+	font-family: Century Gothic, sans-serif;
+	background: transparent;
+	vertical-align: baseline;
+	border: 0;
+	
+}
+body {
+	background-image: url(midia/img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+img, picture, video, embed, figure {
+	max-width: 100%;
+}
+h1{
+	text-align: center;
+	color:#2579b4;
+	font-size:27px;
+	font-family:Century Gothic;
+}
+h4{
+	color:#2579b4;
+	font-size:27px;
+	font-family:Century Gothic;
+	text-align: center;
+
+}
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+.logo{
+	float: left;
+		
+}
+
+#bloco-central{
+	width: 60%;
+	height: auto;
+	background: #fff;	
+	margin: 0 auto;
+	padding: 15px 15px;
+}
+video{
+	width: 100%;
+	height:auto;
+}
+.obras{
+	margin-top: 150px;	
+}
+@media screen and (max-width: 800px){
+#bloco-central{
+	width: 80%;
+}
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+footer{
+	width: 100%;
+	height: 70px;
+	margin-top: 147px;
+	background-color: #d7ecfa;
+	color: #939393;
+	font-size: 15px;	
+}
+
+
+#redes{
+	margin-top: 10px;
+	float: right;	
+}
+.direitos{
+	text-align: center;
+		
+}
+	

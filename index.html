@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+		<title>Saúde Agendada</title>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="title" content=" O Saúde Agendada é um sistema web de agendamento de consultas exames online voltado para clinicas médicas" />
+		<meta name="description" content="sistema web de atendimente ao usuário online, e marcação de consultas online" />
+		<meta name="keywords" content="Saúde Agendada, Agendamento de consultas e exames, sistema de saúde, hospitais, clinicas médicas, marcar consultas online, saúde, consultas, exames "  />
+		<meta name="robots" content="index,follow" />
+	  
+		<link rel="shortcut icon" href="midia/img/lotusicone.png" /> 
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        
+       	<script src="js/modernizr.custom.js" type="text/javascript"></script>
+       	<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+	        
+     	<!--Script Scroll jquery-1.11.1-->
+		<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{ 
+				$(".scroll").click(function(event)
+				{        
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+				});
+			});
+		</script>
+
+        <script src="js/jquery-1.9.1.js"></script>
+
+		<script>
+		 if (typeof jQuery == 'undefined'){
+		    document.write(unescape('%3Cscript src="scripts/jquery-min.js" %3E%3C/script%3E'));
+		 }
+		</script>
+        
+		<script src="js/jquery.sequence-min.js"></script>
+		<script src="js/sequencejs-options.modern-slide-in.js"></script>
+
+   </head>
+   <body>
+   		<header>
+	    	<input type="checkbox" id="control-nav" />
+	    	<label for="control-nav" class="control-nav"></label>
+	    	<label for="control-nav" class="control-nav-close"></label>
+        	<nav>
+            	<ul>
+                  	<li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#banner" class="scroll">Sobre</a></li>
+                    <li><a href="#serv" class="scroll">Serviços</a></li> 
+                    <li>
+                    	<img src="midia/img/lotus2.png" alt="Saúde Agendada - Ficar em dia com a saúde nunca foi tão fácil" title="Saúde Agendada - Ficar em dia com a saúde nunca foi tão fácil" />
+                    </li>     
+                    <li><a href="#desen" class="scroll" >Equipe</a></li>
+                    <li><a href="coming-soon.html" target="_blank">Sistema</a></li>
+                   	<li><a href="#contato" class="scroll" >Contato</a></li>
+					<li>
+						<img src="midia/img/fivegeeks.png" class="fivegeeks" alt="Five Geeks Design - Nosso Design, seu estilo"  title="Five Geeks Design" />
+					</li>
+                </ul>
+            </nav>       
+   		</header>
+        
+   		<section id="home">
+        	<h2 style='display: none;'>Saúde Agendada</h2><!-- Titulo definido para a section, segundo as recomendações da w3c, titulo oculto por razão de não a ver o elemento textual na tela!-->
+        	<div>
+            	<img src="midia/img/computador1.png" alt="Saúde Agendada - Ficar em dia com a saúde nunca foi tão fácil" title="Saúde Agendada - Ficar em dia com a saúde nunca foi tão fácil" />
+            </div>
+
+        </section>
+		
+        <section id="banner">
+        	<h2 style="display: none;">O que é Saúde Agendada?</h2>
+        	<div class="sequence-theme">
+				<div id="sequence">
+					<img class="sequence-prev" src="midia/images/bt-prev.png" alt="Previous Frame" />
+					<img class="sequence-next" src="midia/images/bt-next.png" alt="Next Frame" />
+
+					<ul class="sequence-canvas">
+	                	<li class="animate-in">
+	                        <h2 class="title">O que é o Saúde Agendada ?</h2>
+							<h3 class="subtitle">Um sistema prático e eficiente onde os usuários agendam consutas médicas, exames e recebem os resultados dos mesmos, tudo isso via internet.</h3>
+						</li>
+						<li>
+	                    <h2 class="title">Em que contribui ?</h2>
+							<h3 class="subtitle">Contribui na organização do hospital, por exemplo, poupa tempo, e diminui a quantidade de pessoas no local, pois só haverá necessidade do deslocamento até o hospital para consulta, exames e retorno. </h3>
+						</li>
+						<li>
+							<h2 class="title">Por que foi desenvolvido ?</h2>
+							<h3 class="subtitle">As situações encontradas em alguns hospitais deixam bem claro que o atendimento não é dos melhores, com esse sistema o hospital ou clínica pode oferecer um melhor atendimento aos seus pacientes, assim mudando a qualidade no sistema de saúde.</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </section>
+
+        <section id="serv">
+        	<h2>Serviços do sistema</h2>
+                <div id="bloco1">
+                    <div id="cadastro">
+                        <a href="#modal-cadastro">
+                        	<img src="midia/icones/cadastrar.png" alt="Serviços do sistema - Cadastro" />
+                        </a>
+                        <h3>Cadastro</h3>
+                    </div>
+                    
+                     <div id="modal-cadastro" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								O usuário poderá se cadastrar no sistema se contratar o convênio do hospital ou clínica que possui o sistema Saúde Agendada.
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+   
+                    
+                    <div id="agendar">
+                        <a href="#modal-agendar">
+                        	<img src="midia/icones/agendar.png" alt="Serviços do sistema - Agendar consulta" />
+                        </a>
+                        <h3>Agendar consulta</h3>
+                    </div>
+                    
+                    <div id="modal-agendar" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								Assim que o usuário efetuar o login, poderá marcar consultas com qualquer medico de qualquer especialidade de acordo com os horários, datas e médicos disponíveis da clínica ou hospital.
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                    <div id="consulta">
+                    	<a href="#modal-consulta">
+                    		<img src="midia/icones/iconeexame.png" alt="Serviços do sistema - Resultado dos exames" />
+                    	</a>
+                        <h3>Resultado dos exames</h3>
+                    </div> 
+                    
+                    <div id="modal-consulta" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								O usuário cadastrado tem a opção de visualizar os resultados de seus exames online.
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                    <div id="paciente">
+                    	<a href="#modal-paciente">
+                    		<img src="midia/icones/mensagem.png" alt="Serviços do sistema - Mensagens para pacientes" />
+                    	</a>
+                        <h3>Mensagens para pacientes</h3>
+                    </div>
+                    
+                    <div id="modal-paciente" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								Esse serviço possibilita ao usuário do sistema Saúde Agendada, comunicar-se a qualquer momento por mensagem com algum familiar, amigo ou conhecido que utilize o mesmo hospital ou clinica, basta entrar em sua conta e na pagina inicial o usuário irá encontrar esse serviço.
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                  </div>
+                  <div id="bloco2">  
+                    <div id="duvidas">
+                    	<a href="#modal-duvidas">
+                    		<img src="midia/icones/duvida.png" alt="Serviços do sistema - Dúvidas frequentes" />
+                    	</a>
+                        <h3>Dúvidas frequentes</h3>
+                    </div>
+                    
+                    <div id="modal-duvidas" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								É uma página onde os usuários do sistema possam tirar suas dúvidas sobre o sistema para o melhor uso e conforto dos usuários. 
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                    <div id="fale">
+                    	<a href="#modal-fale">
+                    		<img src="midia/icones/fale.png" alt="Serviços do sistema - Fale conosco" />
+                    	</a>
+                        <h3>Fale conosco</h3>
+                    </div>
+                    
+                    <div id="modal-fale" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								Possui o contato da clínica ou hospital que possui o sistema Saúde Agendada e o contato da empresa desenvolvedora do sistema, para atender a todos da melhor forma possível.  
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                    <div id="tabela">
+                    	<a href="#modal-tabela">
+                    		<img src="midia/icones/precos.png" alt="Serviços do sistema - Tabela de preços" />
+                    	</a>
+                        <h3>Tabela de preços</h3>
+                    </div>
+                    
+                    <div id="modal-tabela" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								Quando o usuário for marcar uma consulta ou exame ele poderá visualizar a tabela de preços da clínica ou hospital, para facilitar e informar melhor todos os pacientes.
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                    
+                    <div id="tipos">
+                    	<a href="#modal-tipos">
+                    		<img src="midia/icones/convenio.png" alt="Serviços do sistema - Tipos de convênio" />
+                    	</a>
+                        <h3>Tipos de convênio</h3>
+                    </div>
+                  </div>
+                  
+                  <div id="modal-tipos" class="janelamodal">
+						<div>
+							<a href="#fechar" title="fechar" class="fechar">X</a>
+                            <div class="texto">
+								Será disponibilizado ao paciente os tipos de convenio que a clínica ou hospital possui, para que o mesmo avalie e veja qual irá se encaixar melhor em seu perfil. 
+							</div>
+					
+									 
+						</div>
+				
+					</div>
+                  
+        </section>
+
+        <section id="desen">
+        	<h2>Desenvolvedores</h2>
+            
+            <div id="bruno">
+                <div class="avatar">
+                    <img src="midia/img/bruno.png" class="bruno" alt="Bruno - Programador" />
+                </div>
+                
+                <p class="nome_avatar">Bruno</p><br>
+            	<p class="funçao_avatar">Programador</p>
+            </div>
+            
+            <div id="fernanda">
+                <div class="avatar" >
+                    <img src="midia/img/fernanda.png" class="feeh" alt="Fernanda - Designer" />
+                </div>
+                
+                <p class="nome_avatar">Fernanda</p><br>
+            	<p class="funçao_avatar">Designer</p>
+            </div>
+            
+            <div id="gabriela">
+                <div class="avatar">
+                    <img src="midia/img/gabi.png" class="gabi" alt="Gabriela - Programadora" />
+                </div>
+                
+                <p class="nome_avatar">Gabriela</p><br>
+            	<p class="funçao_avatar">Programadora</p>
+            </div>
+            
+            <div id="rafaela">
+                <div class="avatar">
+                    <img src="midia/img/rafa.png" class="rafa" alt="Raphaella - Documentação"  />
+                </div>
+                
+                <p class="nome_avatar">Raphaella</p><br>
+            	<p class="funçao_avatar">Documentadora</p>
+            </div>
+            
+            <div id="samuel-r">
+                <div class="avatar">
+                    <img src="midia/img/samuel.png" class="sam-olyver" alt="Samuel Oliveira - Programador" />
+                </div>
+                
+                <p class="nome_avatar">Samuel </p><br>
+            	<p class="funçao_avatar">Programador</p>
+            </div>
+            
+            <div id="samuel-p">
+                <div class="avatar">
+                    <img src="midia/img/samuelzinho.png" class="sam-pereira" alt="Samuel Pereira - DBA" />
+                </div>
+                
+                <p class="nome_avatar">Samuel </p><br>
+            	<p class="funçao_avatar">Administrador de Banco de Dados</p>
+            </div>
+
+        </section>
+
+        <section id="contato">
+       		<h2>Contato</h2>
+	        <div id="dados">	
+	            <form id="formulario" method="post" action="php/contato.php">
+	                <div id="dados-pessoais">
+	                	<h3>Informações Pessoais</h3>
+	                        <input type="text" name="nome"  placeholder="Nome" maxlength="30" /><br/>
+	                        
+	                        <input type="text" name="email"  placeholder="E-mail" maxlength="60" /><br/>
+	                        
+	                        <input type="text" onKeypress="return numeros();" name="tel"  placeholder="Telefone" maxlength="20" /><br/>
+	                        
+	                        <input type="text" name="estado"  placeholder="Estado/Cidade" maxlength="30" /><br/>
+	                </div>
+	                <div id="dados-mensagem">
+	                     <h3>Mensagem</h3>
+	                        <input type="text"  name="assunto" 
+	                        placeholder="Assunto" maxlength="50" /><br/><br/>
+	                        
+	                        <textarea  name="mensage" rows="9" placeholder="Mensagem" maxlength="250" ></textarea>
+	                        
+	                        <br/>
+	                        <input type="submit" onclick="return validacao();" value="Enviar" id="enviar" name="enviar" />
+	                </div>
+	            </form>	
+	        </div>
+        </section>
+
+        <footer>
+	        <div class="redes">
+	        	<a href="#">
+	        		<img src="midia/img/fivegeeks.png" alt="Five Geeks Design - Nosso Design, seu estilo" title="Five Geeks Design - Nosso Design, seu estilo"/>
+	        	</a>
+				<a href="https://instagram.com/fivegeeksplus/" target="_blank">
+					<img src="midia/img/insta.png" alt="Siga-nos em nossas redes socias - Instagram"  title="Siga-nos em nossas redes socias - Instagram" />
+				</a>
+	        	<a href="https://www.facebook.com/fivegeeksplus" target="_blank">
+	        		<img src="midia/img/icone-facebook.jpg" alt="Siga-nos em nossas redes socias - Facebook" title="Siga-nos em nossas redes socias - Facebook" />
+	        	</a>
+	            <a href="https://twitter.com/GeeksFive" target="_blank">
+	            	<img src="midia/img/icone-twiter.jpg" alt="Siga-nos em nossas redes socias - Twiter" title="Siga-nos em nossas redes socias - Twiter" />
+	            </a>
+	        </div>
+        
+       		<p class="txtdireitos">Desenvolvido por <a href="#" target="_blank" title="web site da Five Geeks Design"><b>FIVE GEEKS DESIGN</b></a> - <strong>Nosso design, seu estilo</strong></p>	
+        </footer> 
+	</body>
+</html>
