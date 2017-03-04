@@ -168,4 +168,111 @@ section{
 	-webkit-transition-duration: .60s;
 	border-radius: 50%;
 }
+
+		
+/*------------------------------------------------sessao Desenvolvedores---------------------------------------------------*/
+#desen{
+	background-color: #53ccc0;	
+	height: auto;
+	display: inline-block;
+	
+}
+@media screen and (min-width: 1024px){
+#desen{
+	height: 665px;
+}
+}
+@media screen and (min-width: 1024px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	padding-top: 110px;
+	
+}
+}
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	
+	width: 240px;
+	height: 150px;
+	display: block;	
+	margin-left: 70px;
+	float: left;
+	
+	
+}
+@media screen and (max-width: 640px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	margin-left: 10px;
+	font-size: 26px;
+}
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	}
+@media screen and (min-width: 1280px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	width: 300px;
+	height: 150px;
+		
+}
+.avatar{
+	width: 150px;
+	height: 150px;	
+}
+}
+@media screen and (min-width: 1700px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	width: 400px;
+	height: 150px;
+}
+}
+@media screen and (min-width: 1920px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	width: 500px;
+	height: 150px;
+}
+
+}
+@media screen and (min-width: 1280px){
+#bruno, #fernanda, #gabriela, #rafaela, #samuel-r, #samuel-p{
+	margin-right: 50px;
+}
+}
+.bruno{
+	border-radius: 50%;	
+}
+.feeh{
+	background-image: url(../midia/img/fernanda.png);
+	border-radius: 50%;	
+}
+.gabi{
+	background-image: url(../midia/img/gabi%20(1).png);
+	border-radius: 50%;	
+}
+.rafa{
+	background-image: url(../midia/img/rafa.png);
+	border-radius: 50%;	
+}
+.sam-olyver{
+	background-image: url(../midia/img/samuel.png);
+	border-radius: 50%;	
+}
+.sam-pereira{
+	background-image: url(../midia/img/samuelzinho.png);
+	border-radius: 50%; 	
+}
+.nome_avatar,.funçao_avatar{
+	color: #fff;
+	font-size: 16px; 
+	margin-left: 200px;
+	margin-top: -95px;
+	float: right;
+}
+
+@media screen and (max-width: 500px){
+.nome_avatar, .funçao_avatar{
+	font-size: 0.65em;	/*16px*/
+}
+}
 	
