@@ -342,3 +342,28 @@ textarea{
 	input, textarea, input[type="submit"]{width: 100%;}
 }
 
+/*----------------------------------------------------rodape---------------------------------------------------------------*/
+footer{
+	width: 100%;
+	height: 85px; /*120px / 768px = 0,15625*/
+	background: #ebebeb ;
+	background-position: left 0px;
+	background-repeat: no-repeat;
+	font-family: 'Century Gothic', sans-serif;
+	color: #888;		
+}
+footer p{text-align: center; margin-left: 220px;}
+
+@media screen and (max-width: 984px){
+	footer{height: auto;}
+	footer p{margin-left: 0; text-align: left;}
+}
+a{
+	color: #999;
+	text-decoration: none;	
+}
+.redes{
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;	
+}
