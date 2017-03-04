@@ -325,28 +325,30 @@
         </section>
 
         <section id="contato">
-       		<h2>Contato</h2>
-	        <div id="dados">	
+       		
+	        <div id="dados">
+	        	<h2>Contato</h2>
+
 	            <form id="formulario" method="post" action="php/contato.php">
 	                <div id="dados-pessoais">
 	                	<h3>Informações Pessoais</h3>
-	                        <input type="text" name="nome"  placeholder="Nome" maxlength="30" /><br/>
+	                        <input type="text" name="nome"  placeholder="Nome" maxlength="30" required /><br/>
 	                        
-	                        <input type="text" name="email"  placeholder="E-mail" maxlength="60" /><br/>
+	                        <input type="email" name="email"  placeholder="E-mail" maxlength="60" required /><br/>
 	                        
-	                        <input type="text" onKeypress="return numeros();" name="tel"  placeholder="Telefone" maxlength="20" /><br/>
+	                        <input type="text" name="tel"  placeholder="Telefone" maxlength="20" required /><br/>
 	                        
-	                        <input type="text" name="estado"  placeholder="Estado/Cidade" maxlength="30" /><br/>
+	                        <input type="text" name="estado"  placeholder="Estado/Cidade" maxlength="30" required /><br/><br/>
 	                </div>
 	                <div id="dados-mensagem">
 	                     <h3>Mensagem</h3>
 	                        <input type="text"  name="assunto" 
-	                        placeholder="Assunto" maxlength="50" /><br/><br/>
+	                        placeholder="Assunto" maxlength="50" required /><br/><br/>
 	                        
-	                        <textarea  name="mensage" rows="9" placeholder="Mensagem" maxlength="250" ></textarea>
+	                        <textarea  name="mensage" rows="9" placeholder="Mensagem" maxlength="250" required></textarea>
 	                        
 	                        <br/>
-	                        <input type="submit" onclick="return validacao();" value="Enviar" id="enviar" name="enviar" />
+	                        <input type="submit" value="Enviar" />
 	                </div>
 	            </form>	
 	        </div>

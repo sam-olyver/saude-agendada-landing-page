@@ -275,4 +275,70 @@ section{
 	font-size: 0.65em;	/*16px*/
 }
 }
-	
+
+
+/*-------------------------------------------------------Sessao Contato-----------------------------------------*/
+#contato{
+	background: #000033;
+	display: inline-block;
+	height: 560px;	
+}
+#dados-pessoais{
+	float: left;
+	width: 45%;
+
+}
+#dados-mensagem{
+	float: right;	
+	width: 45%;
+}
+#formulario{
+	width: 80%;
+	background: #000033;	
+	color: #fff;
+	font-family: 'Century Gothic', sans-serif;
+	padding: 20px 15px;
+	font-size: 18px; /*20px / 16px = 1.25*/
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-top: 10px; 
+	}
+
+input{
+	background: #000033;
+	border: none;
+	border-bottom: solid 2px #fff;
+	color: #fff;
+	font-size: 20px;
+	width: 100%;
+	padding-top: 20px;
+	outline: none;
+}
+input[type="submit"]{
+	background-color: #141490;
+	border: none;
+	padding: 5px;
+	font-size: 14px;
+	width: 101%;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+input[type="submit"]:hover {
+	background-color: #fff;
+	color: #141490;
+	border:solid 5px #141490;
+	font-weight: bold;
+	transition: all ease 2s;
+	}
+textarea{
+	width: 100%;	
+	resize: none;
+}
+
+@media screen and (max-width: 900px){
+	#contato{height: auto}
+	#dados-pessoais, #dados-mensagem{width: 100%;}
+	input, textarea, input[type="submit"]{width: 100%;}
+}
+
